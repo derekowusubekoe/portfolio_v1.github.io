@@ -1,0 +1,54 @@
+body{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    display: inline-block;
+    background-color: grey;
+    border-radius: 3px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 2px;
+}
+li:hover{
+    background-color: red;
+}
+li:first-child{
+    margin-left: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.feature-box{
+    display: flex;
+}
+.feature-box div{
+    width: 100%;
+    margin: 1px;
+}
+/* using a SPACE between the two selectors emphasize on divs inside section */
+/* Using a COMMA between two selectors applies the css values to multiple elements */
+/* Using NO SPACE we looking at only the <sections> element that are feature-box and sales. */
+/* Psedo class */
+/* Using the PLUS sign means you are targeting the immediate neighbour*/
+/*
+There are four different combinators in CSS:
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+
+*/
+section.feature-box.sales div{
+    background: grey;
+    
+}
+section.feature-box.closeouts div{
+    background: red;
+}

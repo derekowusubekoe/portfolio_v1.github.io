@@ -1,0 +1,121 @@
+* {
+	/* -webkit-box-sizing: border-box; */
+	-moz-box-sizing: border-box;
+	/* box-sizing: border-box; */
+}
+
+body {
+	font: 400 15px Lato, sans-serif;
+	line-height: 1.8;
+	color: #818181;
+}
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #303030;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.navbar {
+	margin-bottom: 0;
+	background-color: #74b9ff;
+	z-index: 9999;
+	border: 0;
+	font-size: 18px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	font-family: Montserrat, sans-serif;
+}
+#navbar-brand {
+	margin-top: 10px;
+}
+.navbar li a,
+.navbar .navbar-brand {
+	color: #fff !important;
+}
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+	color: #74b9ff !important;
+	background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+
+.animate-slide {
+	visibility: hidden;
+}
+h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	color: #303030;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+#welcome-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	background-image: url("https://images.unsplash.com/photo-1441441247730-d09529166668?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2106&q=80");
+}
+.container-fluid {
+	padding: 60px 50px;
+}
+.bg-grey {
+	background-color: #f6f6f6;
+}
+.thumbnail {
+	padding: 0 0 15px 0;
+	border: none;
+	border-radius: 0;
+}
+.thumbnail img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+.fa:hover {
+	opacity: 0.7;
+}
+.fa-twitter {
+	background: #55acee;
+	color: white;
+}
+.fa-github {
+	background: #125688;
+	color: white;
+}
+.fa-codepen {
+	background: #2c4762;
+	color: white;
+}
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+.fa-at {
+	background: #45bbff;
+	color: white;
+}
+@media screen and (max-width: 768px) {
+	.col-sm-6 {
+		text-align: center;
+		margin: 25px 0;
+	}
+}

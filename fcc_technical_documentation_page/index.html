@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub Workflows</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>GitHub Workflows</header>
+        <ul>
+            <li><a class="nav-link" href="#Brief_Introduction_on_GitHub_flows">Brief Introduction on GitHub flows </a></li>
+            <li><a class="nav-link" href="#Create_Branch">Create Branch</a></li>
+            <li><a class="nav-link" href="#Add_Commits">Add Commits</a></li>
+            <li><a class="nav-link" href="#Open_a_Pull_Request">Open a Pull Request</a></li>
+            <li><a class="nav-link" href="#Review_Your_Code">Review Your Code</a></li>
+            <li><a class="nav-link" href="#Deploy">Deploy</a></li>
+            <li><a class="nav-link" href="#Merge">Merge</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Brief_Introduction_on_GitHub_flows">
+                <header>Brief Introduction on GitHub flows</header>
+                <article>
+                  <p>GitHub flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly. This guide addresses two aspects of the GitHub flow works; on two main explains how and why GitHub flow works.</p>
+                    <ul class="bullets">
+                        <li> The significance of flow</li>
+                        <li> And how it works</li>
+                    </ul>
+                </article>
+        </section>
+        <section class="main-section" id="Create_Branch">
+                <header>Create Branch</header>
+                <article>
+                    <p>When you're working on a project, you're going to have a bunch of different features or ideas in progress at any given time – some of which are ready to go, and others which are not. Branching exists to help you manage this workflow.</p>
+                      <p>When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the master branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.</p>
+                    <code>$ git branch <feature_name></code>
+                    <p>To view all the branches in your project, the -v is used with the "git branch" command</p>
+                    <code>$ git branch -v </code>
+                    <img src="https://miro.medium.com/max/1200/1*RTgn1s0GY8r0rSPsAzf8NQ.png" alt="git branch image style="width:40%;>    
+                </article>
+        </section>
+        <br>
+        <section class="main-section" id="Add_Commits">
+                <header>Add Commits</header>
+                <article>
+                    <p>Once your branch has been created, it's time to start making changes. Whenever you add, edit, or delete a file, you're making a commit, and adding them to your branch. This process of adding commits keeps track of your progress as you work on a feature branch.</p>
+                    <img src="https://miro.medium.com/max/686/1*UJhBACoeEKH3lxXUpNx6MA.jpeg" alt="git commit icon style="width:40%;>
+                    <p>Commits also create a transparent history of your work that others can follow to understand what you've done and why. Each commit has an associated commit message, which is a description explaining why a particular change was made.</p>
+                    <code>$ git commit -m "some form of message" </code>
+                    <p>Furthermore, each commit is considered a separate unit of change. This lets you roll back changes if a bug is found, or if you decide to head in a different direction.
+                    Commit messages are important, especially since Git tracks your changes and then displays them as commits once they're pushed to the server. The commit message is written in this format;</p>
+                </article>
+        </section>
+        <br>
+        <section class="main-section" id="Open_a_Pull_Request">
+                <header>Open a Pull Request</header>
+                <article>
+                    <p>The Git flow Workflow is similar to the Feature Branch Workflow, but defines a strict branching model designed around the project release. Adding pull requests to the Gitflow Workflow gives developers a convenient place to talk about a release branch or a maintenance branch while they’re working on it.</p> 
+                    <a href="https://www.atlassian.com/git/tutorials/making-a-pull-request">Read more</a>
+                      <h2>ProTip</h2>
+                      <ul class="bullets">
+                      <li> Requests are useful for contributing to open source projects and for managing changes to shared repositories. If you're using a Fork & Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider.
+                    </li>                    
+                      <li>Pull Request can be done at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work.
+                        </li>
+                    </ul>
+                    <img src="http://blog.seibert-media.net/wp-content/uploads/2014/03/Pull-Requests-1.png" alt="git pull request style="width:40%;>
+                      <p>If someone comments that you forgot to do something or if there is a bug in the code, you can fix it in your branch and push up the change. GitHub will show your new commits and any additional feedback you may receive in the unified Pull Request view. Pull Requests help start code review and conversation about proposed changes before they're merged into the master branch.</p>
+                      <p>The code for a pull request is inserted below;</p>
+                    <code> git request-pull v1.0 https://git.ko.xz/project master </code>
+                </article>
+        </section>
+        <br>
+        <section class="main-section" id="Review_Your_Code">
+                <header> Review your Code</header>
+                <article>
+                    <p>Once a Pull Request has been opened, the person or team reviewing your changes may have questions or comments. Perhaps the coding style doesn't match project guidelines, the change is missing unit tests, or maybe everything looks great and props are in order. Pull Requests are designed to encourage and capture this type of conversation.</p>
+                    <p>You can also continue to push to your branch in light of discussion and feedback about your commits. GitHub will show your new commits and any additional feedback you may receive in the unified Pull Request view.Pull Request comments are written in Markdown, so you can embed images and emoji, use pre-formatted text blocks, and other lightweight formatting.</p>
+                    <h2>ProTips</h2>
+                    <p>While reviewing your code through a pull request, the following features can be added</p>
+                    <ul class="bullets">
+                        <li>Embeding images and emoji</li>
+                        <li>The use of pre-formatted text blocks</li>
+                    </ul>
+                </article>
+        </section>
+        <br>
+        <section class="main-section" id="Deploy">
+                <header> Deploy</header>
+                <article>
+                    <p>With GitHub, you can deploy from a branch for final testing in production before merging to master.</p> 
+                    <p>Once your pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing master into production.</p>
+                    <h2>ProTip</h2>
+                    <ul class="bullets">
+                      <li>The master branch is stable and it is always, always safe to deploy from it or create new branches off of it.</li>
+                      <li>You could have a deployed branch that is updated only when you deploy.</li>
+                    </ul>
+                </article>
+        </section>
+        <br>     
+        <section class="main-section" id="Merge">
+                <header> Merge</header>
+                <article>
+                    <p>Now that your changes have been verified in production, it is time to merge your code into the master branch.</p>
+                    <p> Once merged, Pull Requests preserve a record of the historical changes to your code. Because they're searchable, they let anyone go back in time to understand why and how a decision was made.</p>
+                    <h2>Steps to consider before merging</h2>
+                    <ul class="bullets">
+                        <li>
+                            Make sure that I have the latest version of the feature branch from the remote repo
+                            </li>
+                                <code> $ git checkout my-feature-branch</code>
+                                <code> $ git pull origin my-feature-branch</code>
+                    <li>Make sure that the feature branch is up to date with master, while in the feature branch, execrate the following:
+                    </li>
+                        <code>$ git pull origin master </code>           
+                    <li>Use the following commands to verify that the local master branch is up to date as well.
+                       </li>     
+                          <code> $ git checkout master  </code>
+                          <code>$ git pull origin master</code>
+                          <code>$ git merge --no-ff my-feature-branch</code>              
+                       <li>Now that I have merged the code, The feature branch becomes obsolete after the code is merged so branch can be deleted from the local repo with the command below:
+                         </li>
+                            <code>$ git branch -d my-feature-branch</code>                    
+                      <li>The feature branch must also be deleted from the remote repo by running this command.
+                         </li>
+                            <code>$ git push origin --delete my-feature-branch</code>            
+                    </ul>
+                    <h2>ProTip</h2>
+                    <p>By incorporating certain keywords into the text of your Pull Request, you can associate issues with code. When your Pull Request is merged, the related issues are also closed.</p>
+                </article>
+        </section>
+        <br>
+        <section class="main-section" id="Reference">
+                <header>Reference</header>
+                
+                <article>
+                  <p> All the documentation in this page is taken from</p>
+                  <ul class="bullets">
+                    <li>
+                      <a
+                        href="https://guides.github.com/introduction/flow/"
+                        target="_blank"
+                        >GitHub Guides</a
+                      >
+                    </li>
+                    <li>
+                        <a
+                          href="https://www.atlassian.com/git/tutorials/making-a-pull-request"
+                          target="_blank"
+                          >BitBucket</a
+                        >
+                      </li>
+                      <li><a href="https://gist.github.com/blackfalcon/8428401">GitHub Gist</a></li>
+                  </ul>
+                </article>
+              </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

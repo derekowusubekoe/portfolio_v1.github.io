@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu-bar{
+    min-height: 8%;
+    background-color: #ff9800;
+}
+.menu-bar big{
+    width: 150px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-link{
+    color: #fff;
+}
+.nav-link:hover{
+    color: #000;
+}
+.active{
+    color: #000 !important;
+}
+.fa-cutlery{
+    color: #000 !important;
+}
+.navbar-toggler .fa{
+    color: #fff;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.banner{
+    min-height: 77%;
+    color: #555;
+}
+.banner img{
+    width: 100%;
+    margin: 24% auto;
+}
+.info{
+    margin: 24% auto;
+}
+.info h1{
+    font-size: 30px;
+}
+.info a{
+    width: 135px;
+    color: #fff !important;
+    text-decoration: none !important;
+    padding: 15px 25px;
+    margin: 5% 10px;
+    background: #ff9800;
+    display: inline-block;
+}
+.info .second-btn{
+    border: 1px solid #ff9800 !important;
+    background: transparent !important;
+    color: #555 !important;
+    transition: 0.5s;
+}
+.info .second-btn:hover{
+    background: #ff9800 !important;
+    color: #fff !important;
+}
+.footer-widget{
+    min-height: 15%;
+    background-image: linear-gradient(to right, #ff9800, #a46406);
+    padding: 21px 0;
+    display: inline-flex;
+    color: #fff;
+}
+.footer-text{
+    padding-left: 25px;
+}
+.footer-widget .fa{
+    font-size: 25px;
+}
+.row{
+    margin: 0 !important;
+}
+.social-icons{
+    margin: 0 20px;
+}
+.social-icons .fa{
+    padding: 10px;
+}
+
+@media only screen and (max-width: 960px)
+{
+    .footer-widget{
+        background-image: linear-gradient(#ff9800, #a46406);
+    }
+}
