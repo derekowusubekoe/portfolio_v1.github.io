@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent > .first-child-element > span {
+        width: 100px;
+        background-color: green;
+         transition: 0.7s;
+      }
+
+      .parent > .first-child-element > span:hover {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="first-child-element">
+        <span>Item 1</span>
+        <span>Item 2</span>
+        <span>Item 3</span>
+      </div>
+    </div>
+  </body>
+</html>
