@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid purple;
+}
+section{
+    padding: 100px;
+}
+.profile-home{
+    position: relative;
+    min-height: 100vh;
+    background: #576574;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-home h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+.profile-home h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.profile-home h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+.abt-btn{
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    background: #ED4C67;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 80px;
+    background: #060b12;
+    z-index: 1000; /* brings the header element to the front */
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+    color: #ED4C67;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header.sticky .logo{
+    color: #ED4C67;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin:  0 18px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+header.sticky ul li a{
+    color: #ED4C67;
+}
+
+
