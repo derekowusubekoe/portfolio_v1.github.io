@@ -5,31 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-    /*These are the default styles for the description. Leave these styles*/
-.description {
-    color: lightgrey;
-    font-size: 12px;
-}
-
-/*Write your code here to overwrite the above styles*/
-.item-2 > .description{
-    font-size:14px;
-    color:lightblue;
-}
-
+      .parent > .social-link-ideas > .idea{
+        color: green;
+        background-color: #42cffa;
+        letter-spacing: 3px;
+      }
     </style>
   </head>
   <body>
-    <div class="item-1">
-    <p class="description">A great description</p>
-</div>
-
-<div class="item-2">
-    <p class="description">Another great description</p>
-</div>
-
-<div class="item-3">
-    <p class="description">The greatest description</p>
-</div>
+    <div class="parent">
+      <div class="social-link-ideas">
+          <span class="idea">Heres an idea</span>
+          <span class="idea">Oh look heres another idea</span>
+          <span class="idea">The last idea</span>
+      </div>
+  </div>
   </body>
 </html>
