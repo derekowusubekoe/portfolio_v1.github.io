@@ -1,0 +1,14 @@
+.footer-wrapper{
+    height: 190px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+.footer-wrapper > .footer-center-aligned{
+    width: 50%;
+    max-width: 470px;
+    margin: 0 auto;
+}
