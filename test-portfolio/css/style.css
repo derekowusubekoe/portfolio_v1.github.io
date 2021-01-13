@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 section{
     padding: 100px;
@@ -93,6 +93,17 @@ header ul li a{
 }
 header.sticky ul li a{
     color: #ED4C67;
+}
+footer{
+    height: 200px;
+    display: flex;
+    background: navy;
+    justify-content: center;
+    align-items: center;
+
+}
+footer .fa{
+    color: white;
 }
 
 
