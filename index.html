@@ -1,334 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Additional CSS must be placed after the Bootstrap -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>FullStack Developer | Derek Owusu Bekoe</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Derek Owusu Bekoe | FullStack Web Developer</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <!-- Responsive Navigation -->
-    <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <!-- End of Responsive Navigation -->
-
-    <!-- Intro or Caption -->
-    <div class="container my-5">
-      <h1>Derek Owusu Bekoe</h1>
-      <h2>FullStack Web Developer</h2>
-      <p class="lead">
-        A New Jersey based Software Engineer with the passon in application
-        development and writing clean code.
-      </p>
-      <div class="text-center">
-        <i class="fa fa-git-square"></i>
-        <i class="fa fa-linkedin-square"></i>
-        <i class="fa fa-free-code-camp"></i>
-        <i class="fa fa-twitter-square"></i>
-        <i class="fa fa-codepen"></i>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo-full-rm.png" width="160" height="50" class="d-inline-block align-top ml-5" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto mr-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-offset="90">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio" data-offset="90">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section id="intro" class="hero">
+        <div class="hero-mid-section">
+          <h1 class="title" style="color:rgb(226, 61, 61);">Derek Owusu Bekoe</h1>
+          <br>
+          <h2 class="lead">I am FullStack Web & Mobile Developer based in New Jersey.</h2>
+          <br>
+          <a href="#!" class="btn rounded-pill btn-lg btn-secondary mx-3 my-3 font-weight-bold"><i class="fa fa-download" style="margin-right:5px; font-weight: bold;"></i> Resume
+          </a>
+          <a href="#portfolio" class="btn rounded-pill btn-lg btn-danger font-weight-bold"><i class="fa fa-briefcase" style="margin-right:5px; font-weight: bold;"></i> Portfolio</a>
+        </div>
+      </section>
+    </header>
+    <!--About Me-->
+    <section id="about" class="py-5 pt-3">
+      <div class="container">
+        <h2 class="h1-responsive font-weight-bold text-center mb-5 mt-5">About Me</h2>
+        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet,
+          consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad
+          minim veniam.</p>
+      <div class="row">
+        <div class="col-lg-4 text-center text-lg-left">
+          <img class="img-fluid rounded-circle" src="img/profile.jpg" alt="profile picture of me">
+        </div>
+        <div class="col-lg-8">
+          <div class="row mb-3">
+            <div class="col-1">
+              <i class="fa fa-briefcase"></i>
+            </div>
+            <div class="col-xl-10 col-md-11 col-10">
+              <h5 class="font-weight-bold mb-3">Job Experience</h5>
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-1">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <div class="col-xl-10 col-md-11 col-10">
+              <h5 class="font-weight-bold mb-3">Skills</h5>
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <i class="fa fa-university"></i>
+            </div>
+            <div class="col-xl-10 col-md-11 col-10">
+              <h5 class="font-weight-bold mb-3">Education</h5>
+              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima
+                veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+            </div>
+          </div>
+        </div>
       </div>
+      </div>
+    </section>
+<section id="portfolio" class="text-center py-5" style="background-color: #eee;">
+  <div class="container">
+    <h2 class="h1-responsive font-weight-bold mb-5 mt-5">Portfolio</h2>
+    <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+<div class="row text-center">
+  <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+    <div class="view overlay rounded z-depth-1">
+      <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid" alt="Sample project image">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
     </div>
-    <!-- About Me -->
-    <div class="container">
-      <div class="row">
-        <h3>About Me</h3>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <p>
-            Derek is a New Jersey based Frontend Web Developer with over two (2)
-            years of experience using HTML, CSS and JavaScript to build
-            responsive user interface for both desktop and mobile devices and
-            focus on designing clean & user‑friendly experiences - includes
-            designing web, and mobile & tablet interfaces.
-          </p>
-          <p>
-            I am also passionate about making user experience pleasant with
-            friendly navigation, interactive features and speed optimizations.
-            Aside coding, I do a lot of backyard garding, love to cook, walk or
-            jog aroud the park and play soccer during summer.
-          </p>
+    <!--Excerpt-->
+    <div class="card-body pb-0">
+      <h4 class="font-weight-bold my-3">Title of the news article</h4>
+      <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+        eveniet ut et voluptates repudiandae.
+      </p>
+      <a class="btn btn-sm"><i class="fab fa-html5"></i></a>
+      <a class="btn btn-sm"><i class="fab fa-github"></i></a>
+      <a class="btn btn-sm"><i class="fab fa-js"></i></a>
+    </div>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+    <!--Featured image-->
+    <div class="view overlay rounded z-depth-1">
+      <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid" alt="Sample project image">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <!--Excerpt-->
+    <div class="card-body pb-0">
+      <h4 class="font-weight-bold my-3">Title of the news article</h4>
+      <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+        eveniet ut et voluptates repudiandae.
+      </p>
+      <a class="btn btn-sm"><i class="fab fa-html5"></i></a>
+      <a class="btn btn-sm"><i class="fab fa-github"></i></a>
+      <a class="btn btn-sm"><i class="fab fa-js"></i></a>
+    </div>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-6">
+    <!--Featured image-->
+    <div class="view overlay rounded z-depth-1">
+      <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid" alt="Sample project image">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <!--Excerpt-->
+    <div class="card-body pb-0">
+      <h4 class="font-weight-bold my-3">Title of the news article</h4>
+      <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+        eveniet ut et voluptates repudiandae.
+      </p>
+      <a class="btn btn-sm"><i class="fab fa-html5"></i></a>
+      <a class="btn btn-sm"><i class="fab fa-github"></i></a>
+      <a class="btn btn-sm"><i class="fab fa-js"></i></a>
+    </div>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Container end-->
+</section>
+
+<!--Contact Section -->
+<section id="contact" class="py-5">
+  <!-- Container start-->
+  <div class="container">
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold text-center mb-5 mt-5">Contact</h2>
+    <!-- Section description -->
+    <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet,
+      consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+      ad
+      minim veniam.</p>
+
+      <!-- Grid row -->
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-lg-5 text-center text-lg-left">
+      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-7">
+
+      <!-- Grid row -->
+      <div class="row mb-3">
+
+        <!-- Grid column -->
+        <div class="col-1">
+          <i class="fas fa-share fa-lg indigo-text"></i>
         </div>
-        <div class="col-md-6 prof-img">
-          <img
-            src="/img/profile.jpg"
-            alt="picture of Derek, a creative Software Engineer"
-            class="image-thumbnail"
-          />
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-xl-10 col-md-11 col-10">
+          <h5 class="font-weight-bold mb-3">Safety</h5>
+          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+            quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
         </div>
+        <!-- Grid column -->
+
       </div>
-      <div class="skillset">
-        <h4>Tools & Technologies</h4>
-        <ul class="skillset-list">
-          <li>Git</li>
-          <li>HTML & CSS</li>
-          <li>Bootstrap</li>
-          <li>Adobe XD</li>
-          <li>Node.js</li>
-          <li>T-SQL</li>
-          <li>C/C++ Programming</li>
-          <li>JavaScript</li>
+      <!-- Grid row -->
+
+      <!-- Grid row -->
+      <div class="row mb-3">
+
+        <!-- Grid column -->
+        <div class="col-1">
+          <i class="fas fa-share fa-lg indigo-text"></i>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-xl-10 col-md-11 col-10">
+          <h5 class="font-weight-bold mb-3">Technology</h5>
+          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+            quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-1">
+          <i class="fas fa-share fa-lg indigo-text"></i>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-xl-10 col-md-11 col-10">
+          <h5 class="font-weight-bold mb-3">Finance</h5>
+          <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima
+            veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!-- Grid row -->
+  </div>
+  <!-- Container end-->
+</section>
+<!--Portfolio Section -->
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer Content</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
         </ul>
       </div>
-    </div>
+      <!--Grid column-->
 
-    <!-- Portfolio > Work Experience -->
-    <div class="container">
-      <div class="row">
-        <h3>Portfolio</h3>
-      </div>
-      <div class="row justify-content-around">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Job Experience</h2>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-80 text-center">
-          <i class="fa fa-briefcase"></i>
-          <h3 class="mb-0">Mar 2017 - Present</h3>
-          <h4>Application Developer</h4>
-          <h5 class="text-light">Suez North America</h5>
-          <div class="task-list">
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-80 text-center">
-          <i class="fa fa-briefcase"></i>
-          <h3 class="mb-0">May 2015 - Feb 2017</h3>
-          <h4>Helpdesk Support Analyst</h4>
-          <h5 class="text-light">Suez North America</h5>
-          <div class="task-list">
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-80 text-center">
-          <i class="fa fa-briefcase"></i>
-          <h3 class="mb-0">Apr 2014 - Apr 2015</h3>
-          <h4>Desktop Support Analyst</h4>
-          <h5 class="text-light">Virginia Beach Public Schools</h5>
-          <div class="task-list">
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-80 text-center">
-          <i class="fa fa-briefcase"></i>
-          <h3 class="mb-0">Sep 2013 - Apr 2014</h3>
-          <h4>Field Engineer (Freelance)</h4>
-          <h5 class="text-light">WorkMarket</h5>
-          <div class="task-list mt-0">
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Links</h5>
 
-    <!-- Portfolio > Education -->
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">Education</h2>
-        </div>
-        <div class="col-lg-6 col-md-6 mb-80">
-          <div class="d-flex">
-            <div class="mr-lg-5 mr-3">
-              <i class="fa fa-university"></i>
-            </div>
-            <div>
-              <h3 class="text-dark mb-1">Sep 2013 - Aug 2015</h3>
-              <h4>MSc. Network Management</h4>
-              <p class="mb-0 text-light">Colorado Technical University</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 mb-80">
-          <div class="d-flex">
-            <div class="mr-lg-5 mr-3">
-              <i class="fa fa-university"></i>
-            </div>
-            <div>
-              <h3 class="text-dark mb-1">Aug 2006 - Jul 2010</h3>
-              <h4>BSc. Computer Science</h4>
-              <p class="mb-0 text-light">University of Education, Winneba</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 mb-80">
-          <div class="d-flex">
-            <div class="mr-lg-5 mr-3">
-              <i class="fa fa-university"></i>
-            </div>
-            <div>
-              <h3 class="text-dark mb-1">Sep 1998 - Aug 2001</h3>
-              <h4>Assoc. Technical Education</h4>
-              <p class="mb-0 text-light">Mampong Technical Teachers’ College</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 mb-80">
-          <div class="d-flex">
-            <div class="mr-lg-5 mr-3">
-              <i class="fa fa-university"></i>
-            </div>
-            <div>
-              <h3 class="text-dark mb-1">Jan 1993 - Dec 1996</h3>
-              <h4>Secondary School Certificate</h4>
-              <p class="mb-0 text-light">Building Construction Technology</p>
-            </div>
-          </div>
-        </div>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
       </div>
+      <!--Grid column-->
     </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
 
-    <!-- Portfolio > Projects -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-heading">Projects</h2>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col mb-3">
-            <div class="card">
-              <img src="/img/600x400.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h3 class="card-title">Card title</h3>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-3">
-            <div class="card">
-              <img src="/img/600x400.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h3 class="card-title">Card title</h3>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-3">
-            <div class="card">
-              <img src="/img/600x400.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h3 class="card-title">Card title</h3>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-3">
-            <div class="card">
-              <img src="/img/600x400.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h3 class="card-title">Card title</h3>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div class="section section-on-footer">
-      <div class="container">
-        <div class="row">
-          <h3>Contact Me</h3>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="bg-white rounded text-center p-5 shadow-down">
-              <form action="#" class="row">
-                <div class="col-md-6">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Full Name"
-                    class="form-control px-0 mb-4"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email Address"
-                    class="form-control px-0 mb-4"
-                  />
-                </div>
-                <div class="col-12">
-                  <textarea
-                    name="message"
-                    id="message"
-                    class="form-control px-0 mb-4"
-                    placeholder="Type Message Here"
-                  ></textarea>
-                </div>
-                <div class="col-lg-6 col-10 mx-auto">
-                  <button class="btn btn-primary w-100">send</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/js/main.js"></script>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(6, 1, 17, 0.98); color: white;">
+    © 2020 Copyright:
+    <a class="text-danger font-weight-bold" href="https://derekowusubekoe.com">dobdevCode</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
 </html>
