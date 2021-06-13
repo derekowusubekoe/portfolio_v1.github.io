@@ -62,29 +62,6 @@ ul {
   justify-content: space-between;
 }
 
-.nav .toggle-collapse {
-  position: absolute;
-  top: 0;
-  width: 90%;
-  cursor: pointer;
-  display: none;
-}
-
-.nav .toggle-collapse .toggle-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  padding: 1.7rem 0;
-}
-
-.nav .toggle-collapse .toggle-icons i {
-  font-size: 1.5rem;
-  color: var(--text-gray);
-}
-
 .nav .nav-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,4 +118,3 @@ ul {
     flex-direction: column;
   }
 }
-/*# sourceMappingURL=styles.css.map */
