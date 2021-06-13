@@ -1,87 +1,144 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto&display=swap");
+
+:root {
+  --pri-color: #f00c0c;
+  --text-gray: #8892b0;
+  --text-light: #686666da;
+  --bg-color: #052549;
+  --midnight: #101823;
+  --light-slate: #a8b2d1;
+  --bg: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(../img/bg-1.jpg);
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/bg-1.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
+body,
+html {
+  overflow: hidden;
+  background-color: var(--midnight);
+  color: var(--text-light);
 }
 
-nav {
+a {
+  text-decoration: none;
+  color: var(--light-slate);
+}
+
+.flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4% 5.6%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav {
+  background: var(--midnight);
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  -webkit-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-navimg {
-  width: 150px;
-}
-
-nav .nav-links {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: right;
-}
-
-nav .nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 6px 14px;
-  position: relative;
-}
-
-nav .nav-links ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-nav .nav-links ul li :active::hover {
-  color: #f44336;
-  cursor: pointer;
-}
-
-nav .nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 1px;
-  background: #f44336;
-  display: block;
-  margin: auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-nav .nav-links ul li:hover::after {
-  width: 100%;
-}
-
-.hero {
-  width: 90%;
-  color: #fff;
+.nav .toggle-collapse {
   position: absolute;
-  top: 50%;
+  top: 0;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.5rem;
+  color: var(--text-gray);
+}
+
+.nav .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-items .nav-link {
+  padding: 1.5rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.nav .nav-items .nav-link:hover {
+  background-color: var(--bg-color);
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: var(--pri-color);
+}
+.nav .nav-brand a {
+  padding: 1rem 0;
+  display: block;
+}
+
+.nav .social {
+  padding: 1.8rem 0;
+}
+
+.nav .social i {
+  padding: 0 0.2rem;
+  font-size: 20px;
+}
+
+.nav .social i:hover {
+  color: var(--pri-color);
+}
+
+.nav .nav-items .nav-link:hover::after {
+  content: "";
+  position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
+  right: 50%;
+  bottom: -3px;
+  border: 2px solid #e41739;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
