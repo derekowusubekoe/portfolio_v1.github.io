@@ -52,14 +52,37 @@ ul {
   height: 0rem;
   min-height: 10vh;
   overflow: hidden;
-  -webkit-transition: height 1s ease-in-out;
-  transition: height 1s ease-in-out;
+  -webkit-transition: height 1.3s ease-in-out;
+  transition: height 1.3s ease-in-out;
 }
 
 .nav .nav-menu {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.8rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.5rem;
+  color: var(--pri-color);
+}
+
+.collapse {
+  height: 40rem;
 }
 
 .nav .nav-items {
@@ -71,10 +94,9 @@ ul {
 
 .nav .nav-items .nav-link {
   padding: 1.5rem 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -86,7 +108,7 @@ ul {
   color: var(--pri-color);
 }
 .nav .nav-brand a {
-  padding: 1rem 0;
+  padding: 0.9rem 0;
   display: block;
 }
 
@@ -96,7 +118,7 @@ ul {
 
 .nav .social i {
   padding: 0 0.2rem;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .nav .social i:hover {
@@ -106,8 +128,8 @@ ul {
 .nav .nav-items .nav-link:hover::after {
   content: "";
   position: absolute;
-  left: 50%;
-  right: 50%;
+  left: 30%;
+  right: 30%;
   bottom: -3px;
   border: 2px solid #e41739;
 }
@@ -116,5 +138,8 @@ ul {
   .nav .nav-menu,
   .nav .nav-items {
     flex-direction: column;
+  }
+  .nav .toggle-collapse {
+    display: initial;
   }
 }
