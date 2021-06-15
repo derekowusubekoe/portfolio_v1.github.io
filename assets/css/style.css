@@ -214,6 +214,18 @@ section .title::after {
   border: 2px solid #312976;
   transition: all 0.3s ease;
 }
+.home .home-content a .no-bg {
+  display: inline-block;
+  background-color: none;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 1px solid #312976;
+  transition: all 0.3s ease;
+}
 .home .home-content a:hover {
   color: #312976;
   background: none;
