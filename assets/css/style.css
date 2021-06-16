@@ -19,6 +19,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-family: "Roboto", Helvetica Neue, Helvetica, Arial;
 }
 
 /* custom scroll bar */
@@ -64,11 +65,11 @@ footer {
 section .title {
   position: relative;
   text-align: center;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 600;
   margin-bottom: 60px;
   padding-bottom: 15px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 section .title::before {
   content: "";
@@ -97,7 +98,7 @@ section .title::after {
   width: 100%;
   z-index: 999;
   padding: 30px 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
 .navbar.sticky {
@@ -171,13 +172,16 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("/assets/img/bg-0.png") no-repeat center;
+  background: url("/assets/img/fe-2.jpg") no-repeat center center fixed;
   height: 100vh;
   color: #fff;
   min-height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  opacity: 1;
 }
 .home .max-width {
   width: 100%;
@@ -233,7 +237,7 @@ section .title::after {
 
 /* about section styling */
 .about .title::after {
-  content: "who i am";
+  content: ".";
 }
 .about .about-content .left {
   width: 40%;
@@ -289,7 +293,7 @@ section .title::after {
 .services .title::after,
 .portfolio .title::after {
   background: #111;
-  content: "what i provide";
+  content: ".";
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
@@ -299,6 +303,7 @@ section .title::after {
   padding: 50px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-bottom: 23px;
 }
 .services .serv-content .card:hover {
   background: #312976;
@@ -326,7 +331,7 @@ section .title::after {
 /* skills section styling */
 
 .skills .title::after {
-  content: "what i know";
+  content: ".";
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
@@ -403,7 +408,7 @@ section .title::after {
 
 /* portfolio section styling */
 .portfolio .title::after {
-  content: "who with me";
+  content: ".";
 }
 .portfolio .carousel .card {
   background: #222;
@@ -466,7 +471,7 @@ section .title::after {
 
 /* contact section styling */
 .contact .title::after {
-  content: "get in touch";
+  content: ".";
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -572,6 +577,11 @@ footer span a {
 }
 footer span a:hover {
   text-decoration: underline;
+}
+
+footer span i {
+  font-size: 20px;
+  color: crimson;
 }
 
 /* responsive media query start */
