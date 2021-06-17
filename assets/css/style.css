@@ -86,7 +86,7 @@ section .title::after {
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: #312976;
+  color: #4361ee;
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
@@ -103,7 +103,7 @@ section .title::after {
 }
 .navbar.sticky {
   padding: 15px 0;
-  background: #312976;
+  background: #4361ee;
 }
 .navbar .max-width {
   display: flex;
@@ -145,7 +145,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #312976;
+  background: #4361ee;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -203,19 +203,19 @@ section .title::after {
   margin: 5px 0;
 }
 .home .home-content .text-3 span {
-  color: #312976;
+  color: #4361ee;
   font-weight: 500;
 }
 .home .home-content a {
   display: inline-block;
-  background: #312976;
+  background: #4361ee;
   color: #fff;
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
   font-weight: 400;
   border-radius: 6px;
-  border: 2px solid #312976;
+  border: 2px solid #4361ee;
   transition: all 0.3s ease;
 }
 .home .home-content a .no-bg {
@@ -227,11 +227,11 @@ section .title::after {
   margin-top: 20px;
   font-weight: 400;
   border-radius: 6px;
-  border: 1px solid #312976;
+  border: 1px solid #4361ee;
   transition: all 0.3s ease;
 }
 .home .home-content a:hover {
-  color: #312976;
+  color: #4361ee;
   background: none;
 }
 
@@ -258,25 +258,25 @@ section .title::after {
   margin-bottom: 10px;
 }
 .about .about-content .right .text span {
-  color: #312976;
+  color: #4361ee;
 }
 .about .about-content .right p {
   text-align: justify;
 }
 .about .about-content .right a {
   display: inline-block;
-  background: #312976;
+  background: #4361ee;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid #312976;
+  border: 2px solid #4361ee;
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-  color: #312976;
+  color: #4361ee;
   background: none;
 }
 
@@ -306,7 +306,7 @@ section .title::after {
   margin-bottom: 23px;
 }
 .services .serv-content .card:hover {
-  background: #312976;
+  background: #4361ee;
 }
 .services .serv-content .card .box {
   transition: all 0.3s ease;
@@ -316,7 +316,7 @@ section .title::after {
 }
 .services .serv-content .card i {
   font-size: 40px;
-  color: #312976;
+  color: #4361ee;
   transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i {
@@ -327,9 +327,7 @@ section .title::after {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-
 /* skills section styling */
-
 .skills .title::after {
   content: ".";
 }
@@ -346,18 +344,18 @@ section .title::after {
 }
 .skills .skills-content .left a {
   display: inline-block;
-  background: #312976;
+  background: #4361ee;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid #312976;
+  border: 2px solid #4361ee;
   transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
-  color: #312976;
+  color: #4361ee;
   background: none;
 }
 .skills .skills-content .right .bars {
@@ -385,7 +383,7 @@ section .title::after {
   height: 100%;
   left: 0;
   top: 0;
-  background: #312976;
+  background: #4361ee;
 }
 .skills-content .right .html::before {
   width: 90%;
@@ -419,7 +417,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .portfolio .carousel .card:hover {
-  background: #312976;
+  background: #4361ee;
 }
 .portfolio .carousel .card .box {
   display: flex;
@@ -441,7 +439,7 @@ section .title::after {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #312976;
+  border: 5px solid #4361ee;
   transition: all 0.3s ease;
 }
 .portfolio .carousel .card:hover img {
@@ -457,7 +455,7 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid #312976 !important;
+  border: 2px solid #4361ee !important;
   transition: all 0.3s ease;
 }
 .owl-dot.active {
@@ -466,7 +464,7 @@ section .title::after {
 }
 .owl-dot.active,
 .owl-dot:hover {
-  background: #312976 !important;
+  background: #4361ee !important;
 }
 
 /* contact section styling */
@@ -495,9 +493,22 @@ section .title::after {
 .contact .contact-content .row .info {
   margin-left: 30px;
 }
+
+.contact .contact-content .row .username {
+  margin-left: 20px;
+}
+
+.contact .contact-content .row .address {
+  margin-left: 24px;
+}
+
+.contact .contact-content .row .email {
+  margin-left: 13px;
+}
 .contact .contact-content .row i {
   font-size: 25px;
-  color: #312976;
+  color: #4361ee;
+  margin-right: 10px;
 }
 .contact .contact-content .info .head {
   font-weight: 500;
@@ -556,12 +567,12 @@ section .title::after {
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: #312976;
-  border: 2px solid #312976;
+  background: #4361ee;
+  border: 2px solid #4361ee;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
-  color: #312976;
+  color: #4361ee;
   background: none;
 }
 /* footer section styling */
@@ -572,7 +583,7 @@ footer {
   text-align: center;
 }
 footer span a {
-  color: #312976;
+  color: #4361ee;
   text-decoration: none;
 }
 footer span a:hover {
